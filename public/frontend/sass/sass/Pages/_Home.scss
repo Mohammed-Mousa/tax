@@ -1,0 +1,40 @@
+.main {
+	min-height: 100vh;
+
+	form {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			right: 10px;
+			top: 0px !important;
+			background: url('./img/search-icon.png');
+			width: 26px;
+			height: 100%;
+			background: red;
+		}
+		@if ($lang == "ar") {
+			margin: 0px 5px !important;
+		} @else {
+			margin: 0px 5px !important;
+		}
+		input {
+			border: 0px !important;
+			background-color: rgba($mc, 0.21);
+			color: $mc;
+			width: 100%;
+			border-radius: 20px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			align-content: center;
+			height: 47px;
+
+			@if ($lang == "ar") {
+				padding: 0px 70px 0px 5px;
+			} @else {
+				padding: 0px 5px 0px 70px;
+			}
+		}
+	}
+}

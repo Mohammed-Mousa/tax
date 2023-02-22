@@ -1,0 +1,94 @@
+.loginPage {
+	background: $mc;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+	> div {
+		background-color: $mc1;
+		border-radius: 30px;
+		box-shadow: 0px 0px 10px rgb(#000, 16%);
+		width: 55%;
+		margin:10px auto;
+		padding: 30px 0px;
+		form {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+
+			h1 {
+				font-weight: bold;
+				font-size: 20px;
+				color: $wh;
+			}
+			img {
+				width: 122px;
+				height: auto;
+
+				margin: 20px 0px 10px;
+				display: inline-block;
+			}
+			p {
+				color: $wh;
+				font-size: 18px;
+			}
+			input[type="text"],
+			input[type="password"] {
+				width: 100%;
+				background-color: rgba(black, 20%) !important;
+				border-radius: 30px;
+				font-size: 16px;
+				border: 0px;
+				text-align: center;
+				margin: 4px auto;
+				font-weight: bold;
+				padding: 9px 0px 12px;
+				color: $wh;
+			}
+			button {
+				width: 60%;
+				background-color: $orange !important;
+				border-radius: 30px;
+				font-size: 16px;
+				border: 0px;
+				text-align: center;
+				margin: 4px auto;
+				font-weight: bold;
+				padding: 10px 0px 11px;
+				color: $wh;
+				transition: 0.3s all linear;
+				&:hover {
+					transform: scale(0.95);
+				}
+			}
+			.checkbox-section {
+				>div {
+					margin-top:10px;
+					
+					label {
+						color: $wh;
+						font-size: 16px;
+						cursor: pointer;
+					}
+					.form-check-input{
+						border-radius: 0px !important;
+						cursor: pointer;
+						
+					}
+					.form-check-input:checked{
+						background-color: $orange;
+						border-color:$orange;
+					}
+				}
+			}
+		}
+	}
+	.zk{
+		margin-top: 10px;		color: $wh;
+		font-size: 16px;
+	}
+}
