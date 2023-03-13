@@ -1,0 +1,1189 @@
+@font-face {
+  font-family: "Tahoma";
+  src: url("../fonts/Tahoma.ttf");
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Tahoma", sans-serif;
+  background-color: #e9e9e9;
+  color: #003d65;
+  direction: rtl;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-4 {
+  gap: 4rem;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+
+.col-gap-1 {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
+.col-gap-2 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.col-gap-3 {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+
+.col-gap-4 {
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+
+.col-gap-5 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+.row-gap-1 {
+  row-gap: 1rem;
+}
+
+.row-gap-2 {
+  row-gap: 2rem;
+}
+
+.row-gap-3 {
+  row-gap: 3rem;
+}
+
+.row-gap-4 {
+  row-gap: 4rem;
+}
+
+.row-gap-5 {
+  row-gap: 5rem;
+}
+
+.gap-5px {
+  gap: 5px;
+}
+
+.gap-10px {
+  gap: 10px;
+}
+
+.gap-15px {
+  gap: 15px;
+}
+
+.gap-20px {
+  gap: 20px;
+}
+
+.gap-25px {
+  gap: 25px;
+}
+
+.gap-30px {
+  gap: 30px;
+}
+
+.col-gap-5px {
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+
+.col-gap-10px {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.col-gap-15px {
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+
+.col-gap-20px {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.col-gap-25px {
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+
+.col-gap-30px {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.row-gap-5px {
+  row-gap: 5px;
+}
+
+.row-gap-10px {
+  row-gap: 10px;
+}
+
+.row-gap-15px {
+  row-gap: 15px;
+}
+
+.row-gap-20px {
+  row-gap: 20px;
+}
+
+.row-gap-25px {
+  row-gap: 25px;
+}
+
+.row-gap-30px {
+  row-gap: 30px;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+label,
+input[type=checkbox] {
+  cursor: pointer;
+}
+
+.opacity-0 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/***************************
+Header
+***************************/
+.main-nav {
+  background-color: #003d65;
+  color: #fff;
+}
+.main-nav img {
+  width: 17px;
+}
+.main-nav .wrapper-main-nav {
+  height: 65px;
+}
+.main-nav .wrapper-main-nav .nav-btn-logout {
+  box-shadow: none;
+  color: #fff;
+}
+.main-nav .wrapper-main-nav .wrapper-nav-list {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.main-nav .wrapper-main-nav .wrapper-nav-list .nav-list-item {
+  color: #fff;
+}
+.main-nav .wrapper-main-nav .wrapper-nav-list .nav-list-item-li {
+  position: relative;
+}
+.main-nav .wrapper-main-nav .wrapper-nav-list .nav-list-item-li .wrapper-sub-nav-list {
+  position: absolute;
+  top: 80%;
+  right: 30%;
+  background-color: #fff;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+}
+.main-nav .wrapper-main-nav .wrapper-nav-list .nav-list-item-li .wrapper-sub-nav-list .sub-nav-list-item-li {
+  position: relative;
+}
+.main-nav .wrapper-main-nav .wrapper-nav-list .nav-list-item-li .wrapper-sub-nav-list .sub-nav-list-item-li .sub-nav-list-item {
+  padding: 7px;
+  display: inline-block;
+  border-bottom: 1px solid #dddddd;
+  color: #003d65;
+  background-color: #fff;
+  width: 170px;
+  transition: all 0.3s;
+}
+.main-nav .wrapper-main-nav .wrapper-nav-list .nav-list-item-li .wrapper-sub-nav-list .sub-nav-list-item-li .sub-nav-list-item:hover {
+  background-color: #f7f7f7;
+}
+.main-nav .wrapper-main-nav .wrapper-nav-list .nav-list-item-li .wrapper-sub-nav-list .sub-nav-list-item-li:last-of-type .sub-nav-list-item {
+  border-color: transparent;
+}
+.main-nav .wrapper-main-nav .wrapper-nav-list .nav-list-item-li .wrapper-sub-nav-list .sub-nav-list-item-li .wrapper-sub-sub-nav-list {
+  position: absolute;
+  top: 0;
+  right: 80%;
+  background-color: #fff;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+}
+.main-nav .wrapper-main-nav .wrapper-nav-list .nav-list-item-li .wrapper-sub-nav-list .sub-nav-list-item-li .wrapper-sub-sub-nav-list .sub-sub-nav-list-item-li {
+  position: relative;
+}
+.main-nav .wrapper-main-nav .wrapper-nav-list .nav-list-item-li .wrapper-sub-nav-list .sub-nav-list-item-li .wrapper-sub-sub-nav-list .sub-sub-nav-list-item-li .sub-sub-nav-list-item {
+  padding: 7px;
+  display: inline-block;
+  border-bottom: 1px solid #dddddd;
+  color: #003d65;
+  background-color: #fff;
+  width: 170px;
+  transition: all 0.3s;
+}
+.main-nav .wrapper-main-nav .wrapper-nav-list .nav-list-item-li .wrapper-sub-nav-list .sub-nav-list-item-li:hover .wrapper-sub-sub-nav-list {
+  animation: navAnimateSubSub 0.5s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.main-nav .wrapper-main-nav .wrapper-nav-list .nav-list-item-li:hover .wrapper-sub-nav-list {
+  animation: navAnimate 0.5s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.navbar-nav ul li {
+  position: relative;
+}
+.navbar-nav ul li .sub-menu {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  z-index: 1000;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  transition: all 0.3s;
+  display: none;
+}
+.navbar-nav ul li:hover .sub-menu {
+  display: block;
+}
+
+nav a {
+  color: #FFF !important;
+}
+nav a::after {
+  display: none !important;
+}
+nav .dropdown-item {
+  text-align: right;
+  color: #000 !important;
+}
+nav .dropdown-item:active {
+  background-color: transparent;
+}
+
+@keyframes navAnimate {
+  from {
+    top: 80%;
+    opacity: 0;
+    pointer-events: none;
+  }
+  to {
+    top: 100%;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+@keyframes navAnimateSubSub {
+  from {
+    right: 80%;
+    opacity: 0;
+    pointer-events: none;
+  }
+  to {
+    right: 100%;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+/***************************
+Login
+***************************/
+.body-login {
+  background-color: #003d65;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+.body-login .wrapper-login {
+  color: #fff;
+  background-color: #0a619a;
+  box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.23);
+  padding: 30px 0;
+  width: 735px;
+  border-radius: 20px;
+}
+.body-login .wrapper-login form {
+  width: 554px;
+}
+.body-login .wrapper-login form .login-body input {
+  background-color: #084e7b;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 0;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.body-login .wrapper-login form .login-body input::-moz-placeholder {
+  color: #94b3c6;
+}
+.body-login .wrapper-login form .login-body input::placeholder {
+  color: #94b3c6;
+}
+.body-login .wrapper-login form .login-body .login-btn-submit {
+  border-radius: 25px;
+  display: inline-block;
+  color: #fff;
+  padding: 7px 0;
+  width: 264px;
+  margin: 0 auto;
+  background-color: #b56413;
+}
+/***************************
+Home
+***************************/
+.wrapper-controls label {
+  border-radius: 25px;
+  background-color: #b6c4cc;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-controls label input {
+  border: none;
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  color: #60859c;
+  background-color: transparent;
+}
+.wrapper-controls label input::-moz-placeholder {
+  color: #60859c;
+  font-weight: bold;
+}
+.wrapper-controls label input::placeholder {
+  color: #60859c;
+  font-weight: bold;
+}
+.wrapper-controls button {
+  background-color: #003d65;
+  color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px 20px;
+  width: 225px;
+  border: none;
+}
+.wrapper-controls .btn-add-taxpayer {
+  position: relative;
+}
+.wrapper-controls .btn-add-taxpayer .box-add-taxpayer {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 150px;
+  background-color: #fff;
+  color: #003d65;
+  border-radius: 10px;
+  display: none;
+}
+.wrapper-controls .btn-add-taxpayer .box-add-taxpayer ul {
+  border-radius: inherit;
+}
+.wrapper-controls .btn-add-taxpayer .box-add-taxpayer ul li {
+  cursor: pointer;
+  padding: 7px 0;
+  border-radius: inherit;
+  border-bottom: 1px solid #f7f7f7;
+}
+.wrapper-controls .btn-add-taxpayer .box-add-taxpayer ul li:hover {
+  background-color: #f7f7f7;
+}
+.wrapper-controls .btn-add-taxpayer .box-add-taxpayer ul li:last-of-type {
+  border-color: none;
+}
+.wrapper-controls .btn-add-taxpayer .box-add-taxpayer ul li a {
+  color: inherit;
+  display: inline-block;
+}
+.wrapper-controls .btn-add-taxpayer:hover .box-add-taxpayer {
+  display: block;
+}
+
+/***************************
+Add taxpayer
+***************************/
+.parent-add-taxpayer {
+  width: 814px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px auto;
+}
+.parent-add-taxpayer .wrapper-form {
+  width: 85%;
+}
+
+.addNew-taxpayer-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  pointer-events: none;
+  background-color: #fff;
+  padding: 15px 40px;
+  border-radius: 10px;
+  width: 60vw;
+  z-index: 9999;
+  box-shadow: 0 0 0px 9999px rgba(0, 0, 0, 0.45);
+}
+.addNew-taxpayer-modal.active-modal {
+  animation: modalAni 0.3s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/***************************
+table
+***************************/
+.parent-table {
+  overflow-x: auto;
+}
+.parent-table table {
+  width: 100%;
+  text-align: center;
+}
+.parent-table table th,
+.parent-table table td {
+  min-width: 150px;
+  padding: 10px;
+}
+.parent-table table th:first-of-type,
+.parent-table table td:first-of-type {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.parent-table table th:last-of-type,
+.parent-table table td:last-of-type {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.parent-table table thead {
+  background-color: #003d65;
+  color: #fff;
+}
+.parent-table table tbody tr {
+  border-radius: 20px;
+}
+.parent-table table tbody tr:nth-child(odd) {
+  background-color: #e1e1e1;
+}
+.parent-table table tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+.parent-table table .table-actions button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.parent-table table .comp {
+  color: #3082b8;
+}
+.parent-table table .multiple-os {
+  color: #a20092;
+}
+.parent-table table .table-text-red {
+  color: #cb0000;
+}
+.parent-table table .table-text-green {
+  color: #11a83e;
+}
+
+.table-pagination ul li a {
+  padding: 7px;
+  color: #003d65;
+  font-weight: bold;
+}
+
+/***************************
+Form input taxpayer component
+***************************/
+.form-taxpayer-h .f-a-t-action {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border: 1px solid #7290a4;
+  width: 130px;
+  border-radius: 25px;
+}
+.form-taxpayer-h .f-a-t-action img {
+  color: #003d65;
+}
+.form-taxpayer-h .f-a-t-title {
+  border-bottom: 1px solid #7290a4;
+  display: inline-block;
+}
+
+.wrapper-form-input-taxpayer {
+  justify-content: space-between;
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+}
+.wrapper-form-input-taxpayer label {
+  color: #003d65;
+}
+.wrapper-form-input-taxpayer textarea,
+.wrapper-form-input-taxpayer input {
+  padding: 6px 10px;
+  border-radius: 20px;
+  color: #003d65;
+  flex-basis: 530px;
+  border: 1px solid #7290a4;
+  outline: none;
+  transition: all 0.3s;
+}
+.wrapper-form-input-taxpayer textarea:hover, .wrapper-form-input-taxpayer textarea:focus,
+.wrapper-form-input-taxpayer input:hover,
+.wrapper-form-input-taxpayer input:focus {
+  border-color: #003d65;
+}
+.wrapper-form-input-taxpayer textarea:disabled,
+.wrapper-form-input-taxpayer input:disabled {
+  background-color: #d9d9d9 !important;
+}
+.wrapper-form-input-taxpayer textarea:disabled:hover, .wrapper-form-input-taxpayer textarea:disabled:focus,
+.wrapper-form-input-taxpayer input:disabled:hover,
+.wrapper-form-input-taxpayer input:disabled:focus {
+  border-color: #7290a4;
+}
+.wrapper-form-input-taxpayer textarea {
+  resize: none;
+  height: 70px;
+}
+
+/***************************
+Form submit & cancel btns component
+***************************/
+.wrapper-submit-cancel a,
+.wrapper-submit-cancel button {
+  width: 127px;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 8px 0;
+}
+.wrapper-submit-cancel a img,
+.wrapper-submit-cancel button img {
+  width: 15px;
+}
+.wrapper-submit-cancel .btn-true-action {
+  background-color: #11a83e;
+}
+.wrapper-submit-cancel .btn-true-action img {
+  width: 20px;
+}
+.wrapper-submit-cancel .btn-false-action {
+  background-color: #b41e47;
+}
+
+/***************************
+One occupation
+***************************/
+.parent-one-occupation .one-occupation-actions {
+  margin: 10px 0;
+}
+.parent-one-occupation .one-occupation-actions button {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #003d65;
+  padding: 11px 35px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 25px;
+}
+.parent-one-occupation .one-occupation-actions button:first-of-type {
+  background-color: #11a83e;
+}
+.parent-one-occupation .one-occupation-actions button:last-of-type {
+  background-color: #0088e1;
+}
+.parent-one-occupation .one-occupation-actions button select {
+  padding: 2.5px 0;
+  cursor: pointer;
+}
+.parent-one-occupation .one-occupation-info {
+  background-color: #f4f4f4;
+  padding: 20px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  border: 1px solid #7290a4;
+  border-radius: 20px;
+}
+.parent-one-occupation .one-occupation-info .c-g {
+  color: #11a83e;
+}
+.parent-one-occupation .one-occupation-info .c-r {
+  color: #b41e47;
+}
+.parent-one-occupation .one-occupation-info .o-o-title {
+  font-weight: bold;
+}
+.parent-one-occupation .one-occupation-info .o-o-val {
+  font-weight: bold;
+}
+.parent-one-occupation .one-occupation-data .wrapper-one-occupation-data {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 20px;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.parent-one-occupation .one-occupation-data .wrapper-one-occupation-data .one-occupation-data-1 {
+  flex: 1;
+}
+.parent-one-occupation .one-occupation-data .wrapper-one-occupation-data .wrapper-form-input-taxpayer {
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.parent-one-occupation .one-occupation-data .wrapper-one-occupation-data .wrapper-form-input-taxpayer label {
+  flex: 1;
+  font-size: 14px;
+}
+.parent-one-occupation .one-occupation-data .wrapper-one-occupation-data .wrapper-form-input-taxpayer input {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.11);
+}
+.parent-one-occupation .one-occupation-data .wrapper-one-occupation-data .wrapper-form-input-taxpayer.one-b input {
+  flex-basis: 323px;
+}
+.parent-one-occupation .one-occupation-data .wrapper-one-occupation-data .wrapper-form-input-taxpayer.two-b input {
+  flex-basis: 203px;
+}
+.parent-one-occupation .one-occupation-data .wrapper-one-occupation-data .wrapper-form-input-taxpayer.three-b input {
+  flex-basis: 184px;
+}
+.parent-one-occupation .one-occupation-data-title {
+  color: #1e78b4;
+  border-bottom: 1px solid #7290a4;
+  display: inline-block;
+  font-weight: bold;
+}
+.parent-one-occupation .form-one-occupation-title {
+  font-weight: bold;
+  color: #003d65;
+}
+.parent-one-occupation .form-one-occupation-title.o-underline {
+  border-bottom: 1px solid #7290a4;
+  display: inline-block;
+}
+
+.one-occupation-accourdion ul li {
+  border-radius: 20px;
+  border: 1px solid #7290a4;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.11);
+  margin-bottom: 5px;
+}
+.one-occupation-accourdion ul li .wrapper-h-a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  padding: 8px 10px;
+  color: #003d65;
+  outline: none;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+/***************************
+Tax settings
+***************************/
+.parent-tax-settings .wrapper-tax-settings .wrapper-tax-settings-actions .tax-settings-action {
+  text-align: center;
+  background-color: #1e78b4;
+  border-radius: 25px;
+  padding: 10px 0;
+  width: 250px;
+  color: #fff;
+}
+.parent-tax-settings .wrapper-tax-settings .wrapper-tax-settings-actions .tax-settings-action.add-new-tax {
+  padding: 7px 0;
+  width: 182px;
+  background-color: #11a83e;
+}
+.parent-tax-settings .wrapper-tax-settings .wrapper-tax-settings-content .tax-settings-content-parent .tax-settings-content-wrapper li {
+  padding: 10px 50px;
+  width: 100%;
+  border: 1px solid #7290a4;
+  border-radius: 25px;
+  background-color: #e0e0e0;
+  margin-bottom: 3px;
+}
+.parent-tax-settings .wrapper-tax-settings .wrapper-tax-settings-content .tax-settings-content-parent .tax-settings-content-wrapper li.slide-amount span:nth-of-type(1) {
+  flex: 2;
+}
+.parent-tax-settings .wrapper-tax-settings .wrapper-tax-settings-content .tax-settings-content-parent .tax-settings-content-wrapper li.slide-amount span:nth-of-type(2) {
+  flex: 1;
+}
+.parent-tax-settings .wrapper-tax-settings .wrapper-tax-settings-content .tax-settings-content-parent .tax-settings-content-wrapper li.slide-amount span:nth-of-type(3) {
+  flex: 1;
+}
+
+.edit-tax-modal {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  pointer-events: none;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  width: 50vw;
+  z-index: 9999;
+  box-shadow: 0 0 0px 9999px rgba(0, 0, 0, 0.45);
+}
+.edit-tax-modal .edit-tax-modal-body .wrapper-edit-tax-modal-body-items .edit-tax-modal-body-item input {
+  width: 245px;
+  border: 1px solid #7290a4;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 7px 10px;
+  outline: none;
+  color: #003d65;
+  transition: all 0.3s;
+}
+.edit-tax-modal .edit-tax-modal-body .wrapper-edit-tax-modal-body-items .edit-tax-modal-body-item input::-moz-placeholder {
+  color: #7f9eb2;
+}
+.edit-tax-modal .edit-tax-modal-body .wrapper-edit-tax-modal-body-items .edit-tax-modal-body-item input::placeholder {
+  color: #7f9eb2;
+}
+.edit-tax-modal .edit-tax-modal-body .wrapper-edit-tax-modal-body-items .edit-tax-modal-body-item input:hover, .edit-tax-modal .edit-tax-modal-body .wrapper-edit-tax-modal-body-items .edit-tax-modal-body-item input:focus {
+  border-color: #003d65;
+}
+.edit-tax-modal .edit-tax-modal-note {
+  color: #b41e47;
+}
+.edit-tax-modal.active-modal {
+  animation: modalAni 0.3s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.addNew-tax-modal {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  pointer-events: none;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  width: 50vw;
+  z-index: 9999;
+  box-shadow: 0 0 0px 9999px rgba(0, 0, 0, 0.45);
+}
+.addNew-tax-modal .addNew-tax-modal-body .wrapper-addNew-tax-modal-body-items .addNew-tax-modal-body-item input {
+  width: 520px;
+  border: 1px solid #7290a4;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 7px 10px;
+  outline: none;
+  color: #003d65;
+  transition: all 0.3s;
+}
+.addNew-tax-modal .addNew-tax-modal-body .wrapper-addNew-tax-modal-body-items .addNew-tax-modal-body-item input::-moz-placeholder {
+  color: #e57f7f;
+}
+.addNew-tax-modal .addNew-tax-modal-body .wrapper-addNew-tax-modal-body-items .addNew-tax-modal-body-item input::placeholder {
+  color: #e57f7f;
+}
+.addNew-tax-modal .addNew-tax-modal-body .wrapper-addNew-tax-modal-body-items .addNew-tax-modal-body-item input:hover, .addNew-tax-modal .addNew-tax-modal-body .wrapper-addNew-tax-modal-body-items .addNew-tax-modal-body-item input:focus {
+  border-color: #003d65;
+}
+.addNew-tax-modal .addNew-tax-modal-note {
+  color: #b41e47;
+}
+.addNew-tax-modal.active-modal {
+  animation: modalAni 0.3s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/***************************
+Admin settings
+***************************/
+.parent-admin-settings .admin-settings-actions button {
+  background-color: #003d65;
+  color: #fff;
+  border-radius: 25px;
+  width: 225px;
+  padding: 10px 0;
+}
+.parent-admin-settings .admin-settings-content table tbody {
+  color: #4d4d4d;
+}
+.parent-admin-settings .admin-settings-content table tbody tr td:first-of-type {
+  font-weight: bold;
+}
+.parent-admin-settings .addNew-admin-modal {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  pointer-events: none;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 20px;
+  border: 1px solid #7290a4;
+  width: 50vw;
+  z-index: 9999;
+}
+.parent-admin-settings .addNew-admin-modal .addNew-admin-modal-header {
+  margin-right: 30px;
+}
+.parent-admin-settings .addNew-admin-modal .addNew-admin-modal-header span {
+  border-bottom: 1px solid #7290a4;
+  color: #003d65;
+}
+.parent-admin-settings .addNew-admin-modal .addNew-admin-modal-body .wrapper-addNew-admin-modal-body-items .addNew-admin-modal-body-item input {
+  width: 490px;
+  border: 1px solid #7290a4;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 7px 10px;
+  outline: none;
+  color: #003d65;
+  transition: all 0.3s;
+}
+.parent-admin-settings .addNew-admin-modal .addNew-admin-modal-body .wrapper-addNew-admin-modal-body-items .addNew-admin-modal-body-item input::-moz-placeholder {
+  color: #e57f7f;
+}
+.parent-admin-settings .addNew-admin-modal .addNew-admin-modal-body .wrapper-addNew-admin-modal-body-items .addNew-admin-modal-body-item input::placeholder {
+  color: #e57f7f;
+}
+.parent-admin-settings .addNew-admin-modal .addNew-admin-modal-body .wrapper-addNew-admin-modal-body-items .addNew-admin-modal-body-item input:hover, .parent-admin-settings .addNew-admin-modal .addNew-admin-modal-body .wrapper-addNew-admin-modal-body-items .addNew-admin-modal-body-item input:focus {
+  border-color: #003d65;
+}
+.parent-admin-settings .addNew-admin-modal .addNew-admin-modal-note {
+  color: #b41e47;
+}
+.parent-admin-settings .addNew-admin-modal.active-modal {
+  animation: modalAni 0.3s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/***************************
+Tax reports
+***************************/
+.parent-tax-reports .tax-reports-actions button {
+  padding: 10px 0;
+  border-radius: 25px;
+  width: 152px;
+  color: #fff;
+  background-color: #0088e1;
+}
+.parent-tax-reports .tax-reports-info {
+  background-color: #cdcdcd;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+.parent-tax-reports .tax-reports-info .tax-reports-info-actions button {
+  padding: 7px 20px;
+  border-radius: 25px;
+  width: 225px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #b56413;
+}
+.parent-tax-reports .tax-reports-info .tax-reports-info-actions button.apply {
+  width: 149px;
+  background-color: #11a83e;
+}
+.parent-tax-reports .tax-reports-info .tax-reports-info-actions input[type=date] {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.parent-tax-reports .tax-reports-info .tax-reports-info-actions input[type=date]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.parent-tax-reports .tax-reports-info .tax-reports-info-content {
+  padding: 0 20px;
+}
+.parent-tax-reports .tax-reports-info .tax-reports-info-content ul {
+  width: 558px;
+  height: 103px;
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.parent-tax-reports .tax-reports-info .tax-reports-info-content ul li {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 20px;
+  color: #000000;
+}
+.parent-tax-reports .tax-reports-info .tax-reports-info-content ul li .tax-reports-key {
+  font-weight: bold;
+}
+.parent-tax-reports .tax-reports-info .tax-reports-info-content ul li .tax-reports-value {
+  font-weight: bold;
+}
+.parent-tax-reports .tax-reports-info .tax-reports-info-content ul li .tax-reports-value.red__ {
+  color: #b41e47;
+}
+.parent-tax-reports .tax-reports-info .tax-reports-info-content ul li .tax-reports-value.green__ {
+  color: #11a83e;
+}
+.parent-tax-reports .tax-reports-info .tax-reports-info-content ul li .tax-reports-value.orange__ {
+  color: #b56413;
+}
+
+/***************************
+Staff reports
+***************************/
+.parent-staff-reports .staff-reports-actions label {
+  border-radius: 25px;
+  background-color: #b6c4cc;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.parent-staff-reports .staff-reports-actions label input {
+  border: none;
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  color: #60859c;
+  background-color: transparent;
+}
+.parent-staff-reports .staff-reports-actions label input::-moz-placeholder {
+  color: #60859c;
+  font-weight: bold;
+}
+.parent-staff-reports .staff-reports-actions label input::placeholder {
+  color: #60859c;
+  font-weight: bold;
+}
+
+@keyframes modalAni {
+  from {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    pointer-events: none;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+/***************************
+Mobile
+***************************/
+.btn-mobile-hum svg {
+  fill: #fff;
+  width: 30px;
+}
+
+.parent-tax-settings .wrapper-tax-settings .wrapper-tax-settings-content .tax-settings-content-parent .tax-settings-content-wrapper li .btn-edit-tax, .parent-tax-settings .wrapper-tax-settings .wrapper-tax-settings-content .tax-settings-content-parent .tax-settings-content-wrapper li .btn-del-tax, .btn-mobile-hum {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.parent-tax-settings .wrapper-tax-settings .wrapper-tax-settings-actions .tax-settings-action, .parent-admin-settings .admin-settings-actions button, .parent-tax-reports .tax-reports-actions button, .parent-tax-reports .tax-reports-info .tax-reports-info-actions button {
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 767.98px) {
+  .wrapper-controls {
+    row-gap: 10px;
+  }
+  .wrapper-controls label,
+  .wrapper-controls button {
+    width: 100%;
+  }
+  .body-login .wrapper-login {
+    width: 500px;
+  }
+  .body-login .wrapper-login form {
+    width: 70%;
+  }
+  .wrapper-form-input-taxpayer textarea,
+  .wrapper-form-input-taxpayer input {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .parent-add-taxpayer {
+    width: 90%;
+  }
+  .parent-add-taxpayer .wrapper-form {
+    width: 100%;
+  }
+  .parent-tax-reports .tax-reports-info .tax-reports-info-actions {
+    row-gap: 10px;
+  }
+  .parent-tax-reports .tax-reports-info .tax-reports-info-actions button {
+    width: 100%;
+  }
+  .parent-tax-reports .tax-reports-info .tax-reports-info-content ul {
+    width: 100%;
+    height: auto;
+  }
+  .parent-one-occupation .one-occupation-actions {
+    margin: 10px 0;
+    row-gap: 10px;
+  }
+  .parent-one-occupation .one-occupation-actions button {
+    width: 100%;
+  }
+  .parent-one-occupation .one-occupation-data .wrapper-one-occupation-data .wrapper-form-input-taxpayer.one-b input {
+    width: 100%;
+    flex-basis: auto;
+  }
+  .parent-one-occupation .form-one-occupation-title {
+    font-weight: bold;
+  }
+  .parent-one-occupation .form-one-occupation-title.title-ts {
+    opacity: 0;
+  }
+  .edit-tax-modal {
+    width: 80vw;
+    top: 50%;
+  }
+  .edit-tax-modal .edit-tax-modal-body .wrapper-edit-tax-modal-body-items .edit-tax-modal-body-item {
+    row-gap: 10px;
+  }
+  .edit-tax-modal .edit-tax-modal-body .wrapper-edit-tax-modal-body-items .edit-tax-modal-body-item input {
+    width: 100%;
+  }
+  .addNew-tax-modal {
+    width: 80vw;
+  }
+  .addNew-tax-modal .addNew-tax-modal-body .wrapper-addNew-tax-modal-body-items .addNew-tax-modal-body-item input {
+    width: 100%;
+  }
+}
+.print-t {
+  width: 100%;
+  text-align: center;
+}
+.print-t th,
+.print-t td {
+  padding: 10px;
+  border-radius: 0;
+}
+.print-t thead {
+  background-color: #e9e9e9;
+  color: #000;
+  border: 1px solid #000;
+}
+.print-t tbody tr {
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    background-color: #fff !important;
+    color: #000;
+  }
+  .color-gray,
+  h5 {
+    background-color: #e9e9e9 !important;
+  }
+  .print-t {
+    width: 100%;
+    text-align: center;
+  }
+  .print-t th,
+  .print-t td {
+    padding: 10px;
+    border-radius: 0;
+  }
+  .print-t thead {
+    background-color: #e9e9e9;
+    color: #000;
+    border: 1px solid #000;
+  }
+  .print-t tbody {
+    font-weight: normal;
+  }
+  .print-t tbody tr {
+    border: 1px solid #000;
+    background-color: #fff;
+  }
+}

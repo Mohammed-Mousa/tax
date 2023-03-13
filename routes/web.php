@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AssignmentPersonController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,8 +17,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/', function () {
+    return view('main');
+});
 
 //صفحة  الرئيسية
 Route::get('/main', function () {
     return view('main');
 });
+// مكلف
+Route::get('/assignment_persons', [AssignmentPersonController::class, 'index']);
+Route::post('/assignment_persons/store', [AssignmentPersonController::class, 'store']);
+Route::get('/assignment_persons/multyOccupation', [AssignmentPersonController::class, 'create']);
+Route::get('/assignment_persons/view/{id}', [AssignmentPersonController::class, 'show']);
+
+// مستخدم
+Route::get('/users', [\App\Http\Controllers\UserController::class, 'index']);
+Route::get('/roles', [\App\Http\Controllers\RoleController::class, 'index']);
