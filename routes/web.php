@@ -34,3 +34,5 @@ Route::get('/assignment_persons/view/{id}', [AssignmentPersonController::class, 
 // مستخدم
 Route::get('/users', [\App\Http\Controllers\UserController::class, 'index']);
 Route::get('/roles', [\App\Http\Controllers\RoleController::class, 'index']);
+//اعدادت الضريبة
+Route::get('/tax_settings', [\App\Http\Controllers\TaxSettingsController::class, 'index']);

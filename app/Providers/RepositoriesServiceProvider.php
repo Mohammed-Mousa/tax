@@ -23,6 +23,10 @@ class RepositoriesServiceProvider extends ServiceProvider
             'App\Repositories\Interfaces\AssignmentPersonInterface',
             'App\Repositories\Repositories\AssignmentPersonRepository'
         );
+        $this->app->bind(
+            'App\Repositories\Interfaces\TaxSettingsInterface',
+            'App\Repositories\Repositories\TaxSettingsRepository'
+        );
     }
 
     /**

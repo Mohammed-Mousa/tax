@@ -2,11 +2,9 @@
 
 namespace App\Repositories\Repositories;
 
-use App\Repositories\Interfaces\UserInterface;
 use App\Models\User;
-use App\Models\Role;
+use App\Repositories\Interfaces\UserInterface;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Http\Request;
 
 class UserRepository implements UserInterface
 {

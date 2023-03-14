@@ -2,9 +2,9 @@
 
 namespace App\Repositories\Repositories;
 
-use App\Repositories\Interfaces\AssignmentPersonInterface;
 use App\Models\assignment_person;
 use App\Models\profession;
+use App\Repositories\Interfaces\AssignmentPersonInterface;
 
 class AssignmentPersonRepository implements AssignmentPersonInterface
 {

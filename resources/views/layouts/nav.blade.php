@@ -4,8 +4,8 @@
 			<div class="container-fluid">
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 col-gap-15px">
-						<li class="nav-item nav-list-item-li"><a class="nav-link d-flex align-items-center nav-list-item col-gap-10px" href="home.html"><img style="width: 25px;" src="frontend/icons/add-user-icon.png" alt=""><span>المكلفين </span></a></li>
-						<li class="nav-item nav-list-item-li"><a class="nav-link d-flex align-items-center nav-list-item col-gap-10px" href="tax-settings.html"><img style="width: 25px;" src="frontend/icons/maintenance-icon.png" alt=""><span>إعدادات الضريبة </span></a></li>
+						<li class="nav-item nav-list-item-li"><a class="nav-link d-flex align-items-center nav-list-item col-gap-10px" href="{{url('/assignment_persons')}}"><img style="width: 25px;" src="frontend/icons/add-user-icon.png" alt=""><span>المكلفين </span></a></li>
+						<li class="nav-item nav-list-item-li"><a class="nav-link d-flex align-items-center nav-list-item col-gap-10px" href="{{url('/tax_settings')}}"><img style="width: 25px;" src="frontend/icons/maintenance-icon.png" alt=""><span>إعدادات الضريبة </span></a></li>
 						<li class="nav-item dropdown"><a class="d-flex align-items-center col-gap-10px nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <img src="frontend/icons/report.png" alt=""><span>التقارير</span><img src="frontend/icons/arrow.png" alt=""></a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<li><a class="dropdown-item" href="tax-reports.html">التقارير الفردية</a></li>

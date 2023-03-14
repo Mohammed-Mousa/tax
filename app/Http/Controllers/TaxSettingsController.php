@@ -2,25 +2,26 @@
 
 namespace App\Http\Controllers;
 
-use App\Repositories\Interfaces\AssignmentPersonInterface;
 use Illuminate\Http\Request;
-
-class AssignmentPersonController extends Controller
+use App\Repositories\Interfaces\TaxSettingsInterface;
+class TaxSettingsController extends Controller
 {
-    protected $assignment_person_repo;
+    protected $tax_settings_repo;
 
-    public function __construct(AssignmentPersonInterface $assignment_person_repo )
+    public function __construct(TaxSettingsInterface $tax_settings_repo )
     {
-        $this->assignment_person_repo = $assignment_person_repo;
+        $this->tax_settings_repo = $tax_settings_repo;
     }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-      $assignment_persons =   $this->assignment_person_repo->multiPage();
-//    return $assignment_persons;
-      return View('assignmentpersons.index' , compact('assignment_persons'));
+        $percentege =  $this->tax_settings_repo->getAllPercentege();
+        $company_slides =  $this->tax_settings_repo->getAllCompanySlides();
+        $freelance_slides =  $this->tax_settings_repo->getAllFreelanceSlides();
+
+        return view('taxsettings.index',compact('percentege' , 'company_slides','freelance_slides'));
     }
 
     /**
@@ -28,8 +29,7 @@ class AssignmentPersonController extends Controller
      */
     public function create()
     {
-        return View('assignmentpersons.create' );
-
+        //
     }
 
     /**
@@ -37,11 +37,7 @@ class AssignmentPersonController extends Controller
      */
     public function store(Request $request)
     {
-      $data = $request->all();
-       $assignment_persons =   $this->assignment_person_repo->store($data);
-
-//        return $data;
-        return redirect()->back()->with('success');
+        //
     }
 
     /**
@@ -49,10 +45,7 @@ class AssignmentPersonController extends Controller
      */
     public function show(string $id)
     {
-        $assignment_person=   $this->assignment_person_repo->getById($id);
-       // return $assignment_person->professions ;
-        return View('assignmentpersons.view' ,  compact('assignment_person') );
-
+        //
     }
 
     /**
