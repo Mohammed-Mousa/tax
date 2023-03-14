@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class freelance_slide extends Model
 {
     use HasFactory;
+    protected $guarded = [];
+
     protected $table = 'freelance_slide';
 
 }

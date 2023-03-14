@@ -102,19 +102,20 @@
         </form>
     </div>
     <div class="addNew-tax-modal" modal-addNew-tax>
-        <form action="">
+        <form action="{{url('/tax_settings/addPercentege')}}" method="POST">
+            @csrf
             <div class="addNew-tax-modal-header mb-2"><span>إضافة نسبة جديدة</span></div>
             <div class="addNew-tax-modal-body">
                 <div class="wrapper-addNew-tax-modal-body-items">
                     <div class="d-flex flex-column flex-md-row align-items-center col-gap-15px addNew-tax-modal-body-item mb-2">
                         <label class="fw-bold"> <span class="text-danger mx-1">*</span><span>النسبة:</span></label>
-                        <input type="number" placeholder="ملاحظة النسبة سوف تكون مئوية بشكل آلي">
+                        <input type="number" name="value" placeholder="ملاحظة النسبة سوف تكون مئوية بشكل آلي">
                     </div>
                 </div>
             </div>
             <p class="text-center fw-bold my-3 addNew-tax-modal-note">ملاحظة: فقط قم بإدخال الرقم بدون % , سوف ستم حسابها بشكل آلي </p>
             <div class="d-flex align-items-center justify-content-center col-gap-15px wrapper-submit-cancel">
-                <button class="d-flex align-items-center justify-content-center col-gap-10px btn-true-action" type="button"><span>حفظ</span><img src="frontend/icons/tick-green-icon.png" alt=""></button>
+                <button class="d-flex align-items-center justify-content-center col-gap-10px btn-true-action" type="submit"><span>حفظ</span><img src="frontend/icons/tick-green-icon.png" alt=""></button>
                 <button class="d-flex align-items-center justify-content-center col-gap-10px btn-false-action" type="button" cancel-addNew-tax><span>إلغاء</span><img src="frontend/icons/tick Red icon.png" alt=""></button>
             </div>
         </form>

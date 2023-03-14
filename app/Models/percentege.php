@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class percentege extends Model
 {
     use HasFactory;
+    protected $guarded = [];
+
     protected $table = 'percentege';
 
 }

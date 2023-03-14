@@ -37,7 +37,9 @@ class TaxSettingsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $percentege =   $this->tax_settings_repo->storePercentege($data);
+        return redirect()->back()->with('success');
     }
 
     /**

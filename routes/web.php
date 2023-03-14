@@ -36,3 +36,4 @@ Route::get('/users', [\App\Http\Controllers\UserController::class, 'index']);
 Route::get('/roles', [\App\Http\Controllers\RoleController::class, 'index']);
 //اعدادت الضريبة
 Route::get('/tax_settings', [\App\Http\Controllers\TaxSettingsController::class, 'index']);
+Route::post('/tax_settings/addPercentege', [\App\Http\Controllers\TaxSettingsController::class, 'store']);
